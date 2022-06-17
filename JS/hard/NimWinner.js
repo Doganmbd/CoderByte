@@ -12,6 +12,16 @@ output : 2
 
  */
 
+/* 
+
+a	b	a XOR b     (^)
+0	0	    0
+0	1	    1
+1	0	    1
+1	1	    0
+
+*/
+
 // https://en.wikipedia.org/wiki/Nim#Mathematical_theory
 
  function NimWinner(arr) {
@@ -25,12 +35,12 @@ NimWinner([1,2,3])
 
 /* solution 2 */
 function NimWinner(arr) {
-    let mResult = 0, x = 0;
+    let res = 0, x = 0;
     for (var i = 0; i < arr.length; i++) {
         x ^= arr[i];
-        mResult = x > 0 ? 1 : 2;
+        res = x > 0 ? 1 : 2;
     }
-    return mResult;            
+    return res;            
 }
 
 NimWinner([1,2,3])
