@@ -42,4 +42,5 @@ function SimpleSymbols(str) {
         return false
       }
     }
-    return true */
+    return true 
+    */
