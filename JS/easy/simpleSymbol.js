@@ -24,7 +24,7 @@ function SimpleSymbols(str) {
     }
     return true
   
-  
+SimpleSymbols("+d+=3=+s+") 
   
   
   /* 
@@ -34,7 +34,8 @@ function SimpleSymbols(str) {
     return true 
   */
   
-  /* 
+
+/*     
     let word = str.split("") ;
     let alph = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     for ( let i = 0 ; i < word.length ; i++ ) {
@@ -42,5 +43,6 @@ function SimpleSymbols(str) {
         return false
       }
     }
-    return true 
-    */
+    return true  
+    
+*/
