@@ -15,3 +15,19 @@ def CoinDeterminer(num):
       count = tCount 
   return round(count) 
 CoinDeterminer(6)
+
+def CoinDeterminer(num):
+  if num < 5:
+    return num
+  
+  counter = num // 11
+  residual = num % 11
+
+  if residual == 0:
+    return counter
+  elif residual % 2 == 1:
+    return counter + 1
+  else:
+    return counter + 2
+    
+CoinDeterminer(37)
