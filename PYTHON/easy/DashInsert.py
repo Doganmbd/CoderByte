@@ -13,7 +13,7 @@ Output: 567-30
 
 def Mbd(strParam):
 
-  return ((ord(strParam) - 48) & 1 )
+  return (ord(strParam) & 1 )
 
 def DashInsert(num_str) :
   result = num_str
