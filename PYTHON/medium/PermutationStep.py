@@ -21,6 +21,21 @@ def PermutationStep(num):
       return int(num_string[:i] + num_string[i + 1:] + num_string[i])
   else :
     return -1
+''' 
+  num_string = list(str(num))
+  i = len(num_string) - 2 
+  while i >= 0 and num_string[i] >= num_string[i + 1] :
+    i -= 1
+  if i == -1 :
+    return num_string
+  j = len(num_string) - 1
+  while num_string[j] <= num_string[i] :
+    j -= 1
+  num_string[i] , num_string[j] = num_string[j] , num_string[i] 
+  num_string[i + 1:] = num_string[:i:-1]
+  return int("".join(num_string))  '''
+  
+
 
 
 # keep this function call here 
