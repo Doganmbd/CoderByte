@@ -23,3 +23,21 @@ function FirstFactorial(num) {
     return fact
     }
   FirstFactorial(4)
+
+  function FirstFactorial(num) {
+    let fact = 1
+    
+    for(let i = 1 ; i <= num ; i++ ){
+      fact *= i
+      }
+    
+    return fact
+    }
+  FirstFactorial(4)
+
+function FirstFactorial(num) {
+    if(num < 0) return NaN;
+    
+    return (num > 1) ? FirstFactorial(num-1) * num : 1;
+    }
+FirstFactorial(4)
